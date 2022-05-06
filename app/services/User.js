@@ -8,7 +8,7 @@ export default function UserService() {
 
     return {
         join(req, res) {
-            console.log(' join Start : ' + JSON.stringify(req.body))
+            console.log(' >> join Start : ' + JSON.stringify(req.body))
             new User(req.body).save(function (err) {
                 if (err) {
                     res
